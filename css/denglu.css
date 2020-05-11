@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+.bigbox{
+    width: 100%;
+    height: 1200px;
+    position: relative;
+}
+.bigbox .imgbox{
+    width: 100%;
+    height: 800px;
+    background: url(../images/dengluimg.jpg);
+    background-position: 170px -30px;
+    background-size:80% 100% ;
+}
+
+.bigbox  .v{
+    position: absolute;
+    top: 0;left: 410px;
+    width: 140px;
+    height: 50px;
+    background-color: blue;
+    text-align: center;
+    line-height: 50px;
+    z-index: 10;
+}
+.v a{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.v .icon-vivo{
+    font-size: 90px;
+}
+
+.tao{
+    width: 420px;
+    height: 700px;
+    position: absolute;
+    top: 80px;
+    right: 160px;
+    background-color: white;;
+}
+.tab{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tab .tv{
+    width:300px ;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: blue;
+}
+.tv  .icon-vivo{
+    font-size: 160px;
+}
+.p1{
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    
+}
+.p2{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+.p2 a{
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    font-size: 14px;
+    color: blue;
+}
+
+.ibox1{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.ibox1 div{
+    width:20% ;
+    height: 100%;
+    
+    line-height: 50px;
+    font-size: 18px;
+}
+.ibox1 input{
+    width: 70%;
+    height: 100%;
+    border: none;
+}
+
+.ibox2{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    margin-top: 10px;
+    
+}
+.ibox2 div{
+    width:30% ;
+    height: 70%;
+    line-height: 35px;
+    font-size: 14px;
+    border-left: 1px solid black;
+    color: blue;
+    text-align: center;
+}
+.ibox2 input{
+    width: 70%;
+    height: 70%;
+    border: none;
+    padding-left: 20px;
+}
+.check{
+   width: 100%;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   margin-top: 10px;
+}
+.check div{
+    width: 60%;
+    height: 50%;
+}
+.check input{
+    width: 20px;
+    height: 20px;
+}
+.check p{
+    width: 30%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: right!important;
+}
+.dl{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.zc{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: white;
+    border: blue 1px solid;
+}
+.zc a{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    color: blue;
+    line-height: 50px;
+}
+
+.p3{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(182, 182, 182);
+    text-align: left;
+}
+
+.p4{
+    width:auto ;
+    height: 20px;
+    margin-top: 20px;
+
+}
+.p4 a{
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.x{
+    width: 70%;
+    height: 20px;
+    margin-top: 50px;
+}
+.x div{
+    width: 30%;
+    height: 1px;
+    background-color: black;
+}
+.x p{
+    font-size: 14px;
+    padding: 0 10px;
+    color: rgb(71, 71, 71);
+    width: auto;
+    height: 100%;
+    line-height: 20px;
+}
+
+.dd{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.dd a{
+    width: 10%;
+    height: 20px;
+    color: blue;
+    margin: 0 10px;
+}
+
+.dd .iconfont{
+    font-size: 26px;
+}

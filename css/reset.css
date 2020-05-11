@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a,
+u {
+    text-decoration: none;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+img {
+    border: 0;
+    display: block;
+    /*清除图片下面的大于3px的间距*/
+}
+
+input {
+    outline: none;
+}
+
+.clear_fix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clear_fix {
+    zoom: 1;
+}
+
+公共样式 .border_none {
+    border: none !important;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+.bg_none {
+    background: none !important;
+    /*清除背景*/
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    display: block;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.px10{
+    font-size: 10px;
+}
+.px12{
+    font-size: 12px;
+}
+.px14{
+    font-size: 14px;
+}
+.px16{
+    font-size: 16px;
+}
+.px18{
+    font-size: 18px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

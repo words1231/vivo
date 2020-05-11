@@ -1,0 +1,419 @@
+@charset "utf-8";
+/* header */
+.header {
+    width: 100%;
+    height: 32px;
+    background: #333333;
+}
+
+.header ul {
+    width: 420px;
+    height: 30px;
+    padding-left: 38px;
+}
+
+.header ul>li a {
+    width: 75px;
+    height: 32px;
+    color: #aeaea4;
+    line-height: 32px;
+    font-size: 12px;
+}
+
+.header .box {
+    padding-right: 40px;
+    width: 220px;
+    height: 32px;
+}
+
+.header .box>div {
+    width: 60px;
+    height: 12px;
+}
+
+.header .box>div a {
+    width: 60px;
+    height: 12px;
+    line-height: 12px;
+    color: #aeaea4;
+    font-size: 12px;
+}
+
+.header .box div:nth-child(2) a {
+    border-right: 1px solid #aeaea4;
+}
+
+.header a:hover {
+    color: #e2e2e2;
+}
+.header>div a:hover {
+    color: #e2e2e2;
+}
+.banner {
+    width: 100%;
+    height: 700px;
+    background: url(../images/shouyebanner.jpg);
+    background-position: -580px 0px;
+    background-size: 176% 100%;
+    position: relative;
+}
+
+/* banner */
+/* logo */
+.logo {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    padding: 0 150px 0 50px;
+    position: relative;
+}
+
+.logo .v {
+    width: 20%;
+    height: 70px;
+    margin-left: 20px;
+    color: white;
+    line-height: 70px;
+}
+.logo .icon-vivo{   
+    font-size: 100px;
+}
+.v:hover {
+    color: aqua;
+}
+
+.logo ul {
+    width: 70%;
+    height: 70px;
+}
+
+.logo ul>li {
+    width: auto;
+    height: 70px;
+}
+
+.logo ul>li a {
+    font-weight: 500;
+    width: 100%;
+    height: 70px;
+    font-size: 16px;
+    line-height: 70px;
+    color: white;
+}
+
+.logo .tao {
+    width: 100%;
+    height: 260px;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: none;
+    z-index: 9999;
+}
+
+.tao .look {
+    padding: 20px 70px 0 140px;
+    width: 100%;
+    height: 100%;
+}
+
+.look>div {
+    width: auto;
+    height: 100%;
+}
+
+.look .imgbigbox {
+    width: 100px;
+    height: 120px;
+    transition: 10s ease-in-out;
+    position: relative;
+}
+
+.look .imgbigbox div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.look .imgbigbox img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgbox1 {
+    z-index: 99;
+}
+
+.imgbigbox:hover .imgbox2 {
+    transform: translateX(-17px);
+}
+
+.imgbigbox:hover .imgbox1 {
+    transform: translateX(17px);
+}
+
+
+.look .gengduo p {
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    line-height: 60px;
+    margin-top: 15px;
+    background-color: rgb(161, 161, 161);
+}
+
+.p {
+    color: black;
+    width: auto;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 50px;
+}
+
+.znews {
+    width: auto;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 10px;
+    color: blue;
+}
+
+.logo .s {
+    display: block;
+    width: 10%;
+    height: 100%;
+    
+}
+.logo .sousuo{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    padding-left: 110px;
+}
+.logo .icon-sousuo{
+    font-size: 20px;
+}
+
+/* banner */
+.banner-img{
+    position: absolute;
+    top:28.7%;
+    left: 8.8%;
+    width: 28%;
+    height: 24%;
+}
+.banner-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.goumai{
+    position: absolute;
+    top: 60%;
+    left: 9%;
+    width: auto;
+    height: 20px;
+    font-size: 22px;
+    color: white;
+    line-height: 20px;
+}
+.goumai .iconfont{
+    font-size: 20px;
+}
+
+.f{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.f .aab1{
+    width: 100%;
+    height: 100%;
+    background:url(../images/aab1.png);
+    background-position: -580px 0px;
+    background-size: 176% 100%;
+}
+.f .aab2{
+    width: 100%;
+    height: 100%;
+    background:url(../images/aab2.jpg);
+    background-position: -580px 0px;
+    background-size: 176% 100%;
+}
+.f>a>div{
+    position: absolute;
+    top:29%;
+    left: 8%;
+    width: 20%;
+    height: 26%;
+}
+.f>a>div img {
+    width: 100%;
+    height: 100%;
+}
+.f .goumai{
+    position: absolute;
+    top: 63%;
+    left: 8.5%;
+    width: auto;
+    height: 20px;
+    font-size: 26px;
+    line-height: 20px;
+    color: black;
+}
+
+.f2{
+    width: 100%;
+    height: 550px;
+    justify-content: space-between!important;
+    background-color: white;
+}
+.f2>div{
+    width: 49.8%;
+    height: 98%;
+}
+.f2>div img{
+    width: 100%;
+    height: 100%;
+}
+
+.f4{
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.f4>a{
+    width: 25%;
+    height: 100%;
+}
+.f4 a img{
+    width: 100%;
+    height: 100%;
+}
+.hddb{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: white;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+}
+.hddb a{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.hddb a .icon-shangjiantou{
+    font-size: 30px;
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    padding-top: 70px;
+    background-color: #f7f7f7;
+}
+.footerl{
+    padding-left:13% ;
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+
+.footerl>div{
+    width: 25%;
+    height: 100%;
+}
+.footerl>div h4{
+    width: auto;
+    height: 80px;   
+}
+.footerl>div h4 a{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 80px;
+    color: black;
+    text-align: left;
+}
+.footerl>div p{
+    width: auto;
+    height: 35px;
+}
+.footerl>div p a{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #778089;
+    text-align: left;
+    line-height: 35px;
+}
+
+.footerr{
+    width: 30%;
+    height: 100%;
+    padding: 25px 0 0 80px;
+}
+.footerr>div{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+.footerr p{
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.footerr .iconfont{
+    font-size: 22px;
+}
+
+.footerr .blue{
+    color:#3e4ed7;
+    font-size: 26px;
+    margin-top: 10px;
+}
+.footerr>a{
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 24px;
+    color: black;
+}
+
+.footerr p:last-child a{
+    width: 12%;
+    height: 100%;
+    color: black;
+    float: left;
+    margin-left: -8px;
+}
+.ddd{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: #f7f7f7;
+}
+.ddd p{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    font-size: 12px;
+    color: #778089;
+    border-top: 1px solid #778089;
+    line-height: 60px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="Access-Control-Allow-Origin" content="*" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/zhece.css">
+    <link rel="stylesheet" href="../icon/iconfont.css">
+</head>
+<body>
+    <div class="bigbox">
+        <div class="box1">
+            <p><span class="iconfont icon-vivo"></span></p>
+            <p>帐号注册</p>
+        </div>
+        <div class="box2">
+            <select>
+                <option>&nbsp&nbsp&nbsp中国</option>
+                <option>&nbsp&nbsp&nbsp中国</option>
+                <option>&nbsp&nbsp&nbsp中国</option>
+                <option>&nbsp&nbsp&nbsp中国</option>
+                <option>&nbsp&nbsp&nbsp中国</option>
+                <option>&nbsp&nbsp&nbsp中国</option>
+                <option>&nbsp&nbsp&nbsp中国</option>
+                <option>&nbsp&nbsp&nbsp中国</option>
+            </select>
+            <p>成功注册帐号后，国家／地区将不能被修改</p>
+            <div class="x">
+                <div>&nbsp&nbsp&nbsp+86</div>
+                <div><input type="text" id="userPhone" placeholder="请输入手机号" value=""></div>
+            </div>
+            <p class="message-box"></p>
+            <div class="f">
+                <input type="checkbox">
+                <span>我已阅读并接受《vivo服务协议》</span>
+            </div>
+            <div class="end"><a href="zhuce2.html">下一步</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<!-- <script src="../js/ajaxTools.js"></script> -->
+<script>
+    $("#userPhone").blur(function () {
+        $.ajax({
+            context: document.getElementById("message-box"),
+            type: "POST",
+            url: "checkUser1.php",
+            data: {
+                "userPhone": $("#userPhone")[0].value
+            },
+            success: function (str, textStatus, jqXHR) {
+                if (str == "1") { //用户名存在
+                    this.style.dispaly = "block"
+                    this.innerHTML = "手机号码正确";
+                } else if (str == "0") {
+                    this.style.dispaly = "block"
+                    this.innerHTML = "手机号码错误";
+                }
+            }
+        })
+    })
+    
+    // $("#userPhone").blur(function () {
+    //     let a = $("#userPhone")[0].value;
+    //     let mess = document.getElementById("message-box");
+    //     let xhr = new XMLHttpRequest();
+    //     xhr.open("post", "checkUser1.php", true);
+    //     if (xhr.readyState == 4 && xhr.status == 200) {
+    //         if (xhr.responseText == "1") {
+    //             mess.innerHTML = "手机号正确"
+    //         } else(
+    //             mess.innerHTML = "手机号错误"
+    //         )
+    //     }
+    //     xhr.send(a);
+    // })
+    
+</script>

@@ -1,0 +1,512 @@
+@charset "utf-8";
+/* header */
+.header {
+    width: 100%;
+    height: 32px;
+    background: #333333;
+}
+
+.header ul {
+    width: 420px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 38px;
+    float: left;
+}
+
+.header ul>li:first-child a {
+    opacity: .7;
+}
+
+.header ul>li a {
+    display: block;
+    width: 75px;
+    height: 32px;
+    color: #aeaea4;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.header .box {
+    float: right;
+    padding-right: 40px;
+    width: 220px;
+    height: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .box>div {
+    width: 60px;
+    height: 12px;
+}
+
+.header .box>div a {
+    display: block;
+    width: 60px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #aeaea4;
+    font-size: 12px;
+}
+
+.header .box div:nth-child(2) a {
+    border-right: 1px solid #aeaea4;
+}
+
+.banner {
+    width: 100%;
+    height: 750px;
+    background: url(../images/banner.jpg);
+    background-position: -680px -16px;
+    background-size: 189% 112%;
+    position: relative;
+}
+
+/* banner */
+/* logo */
+.logo {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    padding: 0 150px 0 50px;
+    position: relative;
+}
+
+.logo .v {
+    display: block;
+    width: 20%;
+    height: 70px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    margin-left: 50px;
+}
+
+.v:hover {
+    color: aqua;
+}
+
+.logo ul {
+    width: 70%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo .s {
+    width: 10%;
+    height: 100%;
+    /* background-color: pink; */
+}
+
+.logo .tao {
+    width: 100%;
+    height: 260px;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: none;
+}
+.tao .look {
+    padding: 0 70px 0 140px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.look {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    display: none;
+    background-color: white;
+}
+
+.look>div {
+    width: auto;
+    height: 100%;
+}
+.look .imgbigbox {
+    width: 100px;
+    height: 120px;
+    transition: 10s ease-in-out;
+    position: relative;
+}
+
+.look .imgbigbox div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.look .imgbigbox img {
+    width: 100%;
+    height: 100%;
+}
+.imgbox1 {
+    z-index: 99;
+}
+
+.imgbigbox:hover .imgbox2 {
+    transform: translateX(-17px);
+}
+
+.imgbigbox:hover .imgbox1 {
+    transform: translateX(17px);
+}
+
+
+.look .gengduo p {
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    background-color: pink;
+    margin-top: 10px;
+}
+
+.p{
+    color: black;
+    width: auto;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 60px;
+    font-size: 16px;
+}
+.znews{
+    color: blue;
+    font-size: 12px;
+}
+
+.logo ul>li {
+    width: auto;
+    height: 70px;
+}
+
+.logo ul>li a {
+    display: block;
+    font-weight: 500;
+    width: 100%;
+    height: 70px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+}
+
+
+.banner-text {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-30%);
+}
+
+.banner-text h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    width: auto;
+    height: 60px;
+    line-height: 60px;
+}
+
+.banner-text h4 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    width: auto;
+    height: 60px;
+    line-height: 60px;
+}
+
+.banner-text p {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+.banner-text p a {
+    display: block;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(252, 246, 246, .5);
+}
+
+.black {
+    background-color: black;
+    height: 160px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.black>div {
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.black .kong {
+    background: white;
+    width: 15px;
+    height: 2px;
+}
+
+.black .zixun {
+    font-size: 32px;
+    text-align: center;
+    width: 170px;
+    height: 50px;
+}
+
+.black p {
+    width: 100px;
+    height: 20px;
+}
+
+.black p a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 125px;
+    color: white;
+    font-size: 16px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+}
+
+.cass1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cass1 div {
+    width: 50%;
+    height: 600px;
+
+}
+
+/* .cass1>div img{
+    width: 100%;
+    height: 100%;
+} */
+.cass-1 {
+    background: url(../images/cass1.jpg);
+    background-position: -240px 0;
+    background-size: 170% 100%;
+}
+
+.cass-4 {
+    background: url(../images/cass2.jpg);
+    background-position: -240px 0;
+    background-size: 170% 100%;
+}
+
+.cass-2 {
+    background: #211e65;
+    position: relative;
+}
+
+.cass-2>div {
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    background: url(../images/QQ截图20200430203009.jpg) no-repeat;
+}
+
+.cass-3 {
+    background: #003442;
+    position: relative;
+}
+
+.cass-3>div {
+    position: absolute;
+    top: 140px;
+    left: 150px;
+    background: url(../images/QQ截图20200430203111.jpg) no-repeat;
+}
+
+.black2 {
+    background-color: black;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.black2 .kong {
+    background: white;
+    width: 15px;
+    height: 2px;
+}
+
+.black2 .zixun {
+    font-size: 32px;
+    text-align: center;
+    line-height: 50PX;
+    width: 170px;
+    height: 50px;
+    color: white;
+}
+
+.hddb{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: white;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+}
+.hddb a{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.hddb a .icon-shangjiantou{
+    font-size: 30px;
+}
+.footer{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    padding-top: 70px;
+    background-color: #f7f7f7;
+}
+.footerl{
+    padding-left:13% ;
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+
+.footerl>div{
+    width: 25%;
+    height: 100%;
+}
+.footerl>div h4{
+    width: auto;
+    height: 80px;   
+}
+.footerl>div h4 a{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 80px;
+    color: black;
+    text-align: left;
+}
+.footerl>div p{
+    width: auto;
+    height: 35px;
+}
+.footerl>div p a{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #778089;
+    text-align: left;
+    line-height: 35px;
+}
+
+.footerr{
+    width: 30%;
+    height: 100%;
+    padding: 25px 0 0 80px;
+}
+.footerr>div{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+.footerr p{
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.footerr .iconfont{
+    font-size: 22px;
+}
+
+.footerr .blue{
+    color:#3e4ed7;
+    font-size: 26px;
+    margin-top: 10px;
+}
+.footerr>a{
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 24px;
+    color: black;
+}
+
+.footerr p:last-child a{
+    width: 12%;
+    height: 100%;
+    color: black;
+    float: left;
+    margin-left: -8px;
+}
+.ddd{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: #f7f7f7;
+}
+.ddd p{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    font-size: 12px;
+    color: #778089;
+    border-top: 1px solid #778089;
+    line-height: 60px;
+}

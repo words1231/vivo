@@ -1,0 +1,107 @@
+@charset "utf-8";
+body {
+    background-color: #f7f7f7;
+}
+
+.bigbox {
+    width: 880px;
+    height: 740px;
+    margin: 80px auto;
+    background: white;
+}
+
+.box1 {
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box1 p:first-child {
+    width: auto;
+    height: 20px;
+    line-height: 20px;
+    color: blue;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box1 .icon-vivo{
+    font-size: 150px;
+}
+.box1 p:last-child {
+    width: auto;
+    height: 20px;
+    font-size: 22px;
+    line-height: 20px;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box2{
+    width:350px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.box2 p{
+    text-align: left;
+    color: #778089;
+}
+.box2 .p1{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: black;
+}
+.box2 .inp1{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+}
+.box2 .inp1 div:first-child{
+    width: 60%;
+    height: 70%;
+    border-right: 1px solid black;
+}
+.box2 .inp1 div:first-child input{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.box2 .inp1 div:last-child{
+    width: 25%;
+    height: 80%;
+}
+
+.box2 .inp2{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid black;
+
+}
+.box2 .inp2 input{
+    width: 90%;
+    height: 70%;
+    border: none;
+}
+
+.box2 .p2{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.box2 .ends{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    background-color: #436dff;
+    font-size: 18px;
+}
